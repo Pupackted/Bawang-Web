@@ -1,0 +1,1 @@
+ALTER TABLE "Vendors" ADD COLUMN "description" text;

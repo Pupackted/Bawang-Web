@@ -1,0 +1,535 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  /* background-image: url("asset/images/homebanner.png");  */
+  background-repeat: no-repeat; /* Prevent image repetition */
+  background-position: top; /* Position image at the top */
+  background-size: 100%;
+  background-size: cover; /* Maintain image aspect ratio, set height to 100% */
+}
+
+.topscreen {
+  margin: 0;
+  background-image: url("/asset/images/homebanner.png");
+  background-repeat: no-repeat; /* Prevent image repetition */
+  background-position: top; /* Position image at the top */
+  background-size: cover;
+  border-radius: 0 0 60px 60px;
+  max-height: 600px;
+}
+
+header {
+  background-color: #33333300;
+  padding: 10px;
+  color: white;
+  background-color: white;
+  border-bottom: 2px solid #252b364b;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 45px;
+}
+
+.center-buttons {
+  display: flex;
+  justify-content: end;
+  flex-grow: 1;
+}
+
+.center-buttons button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #44444400;
+  color: #080a0c9a;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-family: Segoe UI, sans-serif;
+}
+
+/* .center-buttons button:hover {
+  background-color: #555;
+} */
+
+.right-button {
+  margin-left: auto;
+}
+
+.right-button button {
+  padding: 10px 20px;
+  background-color: #ac25eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-family: Segoe UI, sans-serif;
+  margin-right: 50px;
+}
+
+.right-button button:hover {
+  background-color: #555;
+}
+
+.TitleContainer {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  align-self: stretch;
+  position: relative;
+
+  /* min-height: 610px;
+  width: 100%;
+  padding: 16px 58px 0; */
+}
+.titlecolumn1 {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 46%;
+  margin-left: 0px;
+}
+.titlecolumn2 {
+  display: flex; /* Enable flexbox for alignment */
+  flex-direction: column;
+  padding-left: 10%;
+  line-height: normal;
+  width: 54%;
+}
+
+.button-yellow button {
+  width: 220px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #ffc600;
+  color: black;
+  font-size: 16;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.button-yellow button:hover {
+  background-color: #555;
+}
+
+.middlescreen {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-self: center; /* Already centers horizontally */
+  position: relative;
+  justify-content: center; /* Centers vertically */
+  align-items: center; /* Added property for horizontal centering */
+}
+
+/* ==========SEARCH BAR========== */
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 60%; /* Adjust width as needed */
+  background-color: #ffffff; /* Optional background color */
+  border-radius: 16px; /* Optional rounded corners */
+  overflow: hidden; /* Prevent text overflow */
+  border: 1px solid #ccc; /* Added border style */
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1); /* Added shadow */
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%; /* Adjust width as needed */
+  background-color: transparent; /* Remove default background */
+}
+
+.search-button {
+  border: none;
+  outline: none;
+  background-color: transparent; /* Remove default background */
+  cursor: pointer; /* Indicate clickable button */
+}
+
+/* ==================== DROPDOWN ======================== */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-top: 0px;
+  align-items: center;
+  /* Ensures the dropdown appears inline with other elements */
+}
+.dropdown .dropbtn {
+  background-color: rgb(255, 255, 255); /* Set background color to blue */
+  color: #252b36; /* Adjust text color for better contrast */
+  padding: 0px 0px 0px 00px; /* top-right-bottom-left */
+  border: 0px solid #ccc; /* Added border style */
+  border-radius: 38px; /* Optional rounded corners */
+  cursor: pointer; /* Indicate clickable button */
+}
+
+.dropdown-content {
+  display: none; /* Initially hide the dropdown content */
+  position: absolute; /* Position the content relative to the button */
+  background-color: #ffffff; /* Background color for the dropdown */
+  min-width: 160px; /* Set a minimum width for the dropdown */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  z-index: 1; /* Ensure the dropdown content appears above other elements */
+}
+
+.dropdown-content a {
+  color: black; /* Text color for the links */
+  padding: 12px 16px; /* Padding for the links */
+  text-decoration: none; /* Remove underline from links */
+  display: block; /* Display each link as a block */
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+} /* Change background color on hover */
+
+.dropdown:hover .dropdown-content {
+  display: block; /* Show the dropdown content on hover */
+}
+
+/* =============================================== */
+.button-selengkapnya {
+  margin: 0 10px;
+  padding: 10px;
+  background-color: #44444400;
+  color: #9da5b1;
+
+  border-width: 1px;
+  border-color: #9da5b1;
+  cursor: pointer;
+  border-radius: 6.5px;
+  height: 40px;
+  width: 130px;
+  margin-top: 10px;
+}
+.anime-title-button button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  border: 1px solid rgba(8, 10, 12, 0.176);
+  background-color: #5856d6;
+  /* width: 209px;
+  height: 58px; */
+  color: #fff;
+  padding: 21px 17px;
+  font: 700 16px/150% "Segoe UI", sans-serif;
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.anime-title-button button:hover {
+  background-color: #6d2e75;
+}
+
+.row-anime-titles {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: center;
+  gap: 0.5%;
+  margin-top: 2%;
+}
+
+.row-anime-titles2 {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: center;
+  gap: 0.5%;
+}
+
+/* ===============BUAT FRESH FROM THE OVERN============= */
+
+.main-image {
+  height: 200px;
+  width: 200px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.profile-image {
+  width: 34px;
+  height: 34px;
+  border-radius: 680px;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+.profile-name {
+  font-weight: bold;
+  font-size: 13.6px;
+  margin-bottom: 0px;
+  color: #252b36;
+}
+
+.profile-username {
+  font-weight: normal;
+  font-size: 13.6px;
+  margin-top: 0px;
+  color: #252b36;
+}
+
+.item-title {
+  font-family: Segoe UI, sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  margin-bottom: 0px;
+  color: #252b36;
+  margin-left: 10px;
+  margin-top: 0px;
+  margin-right: 10px;
+}
+
+.item-price {
+  font-family: Segoe UI, sans-serif;
+  font-weight: bold;
+  font-size: 13.6px;
+  margin-bottom: 0px;
+  color: #ac25eb;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.item-tag {
+  font-family: Segoe UI, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 13.6px;
+  margin-bottom: 0px;
+  color: #252b36;
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-right: 10px;
+}
+
+.item-tv {
+  font-family: Segoe UI, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 13.6px;
+  margin-bottom: 0px;
+  color: #252b36;
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-right: 10px;
+}
+
+.item-contact {
+  font-family: Segoe UI, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 13.6px;
+  margin-bottom: 0px;
+  color: #252b36;
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-right: 10px;
+}
+
+.item-size {
+  font-family: Segoe UI, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 13px;
+  margin-bottom: 0px;
+  color: #252b36;
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-right: 5px;
+}
+
+.item-gender {
+  font-family: Segoe UI, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 13px;
+  margin-bottom: 0px;
+  color: #252b36;
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-right: 5px;
+}
+
+.top-border {
+  position: absolute; /* Make the container absolutely positioned */
+  bottom: 0; /* Position it at the bottom of the parent */
+  left: 0; /* Align it to the left edge (optional, adjust as needed) */
+  right: 0; /* Align it to the right edge (optional, adjust as needed) */
+  border-top: 1px solid #252b363b;
+  max-height: 30%;
+  overflow: hidden;
+  justify-content: flex-end;
+  background-color: #252b3602;
+}
+
+.item-location {
+  font-family: Segoe UI, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14.6px;
+  margin-bottom: 0px;
+  color: #252b36a4;
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-right: 5px;
+}
+
+.item-link {
+  transition: transform 0.1s ease;
+}
+.item-link:hover {
+  transform: scale(1.05);
+}
+
+/* ============= BUAT LIST RENTALAN ============= */
+
+.Rentalan-Name {
+  font-family: Segoe UI, sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  margin-bottom: 0px;
+  color: #252b36;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.Rentalan-At {
+  font-weight: normal;
+  font-size: 13.6px;
+  margin-top: 3px;
+  margin-left: 10px;
+  margin-bottom: 2px;
+  color: #252b36;
+}
+
+.location-info {
+  font-family: Segoe UI, sans-serif;
+  font-weight: normal;
+
+  font-size: 13.6px;
+  margin-bottom: 0px;
+  color: #252b36;
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-right: 10px;
+}
+
+.jumlah-kostum {
+  font-family: Segoe UI, sans-serif;
+  font-weight: normal;
+
+  font-size: 13.6px;
+  margin-bottom: 0px;
+  color: #f9b115;
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-right: 10px;
+}
+
+.title-and-tombol-selengkapnya {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  justify-content: space-between;
+
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  font-family: Segoe UI, sans-serif;
+  align-items: center;
+  margin-bottom: 0px;
+  margin-top: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* ========= FOOTER ========= */
+.pepekfooter {
+  background-color: #252525; /* Black background */
+  color: #fff; /* White text */
+  text-align: center; /* Center the text */
+  padding: 20px; /* Add some padding */
+
+  font-family: "Segoe UI", sans-serif; /* Font family */
+}
+
+
+
+/* ================FOR MOBILE PEPEE====================== */
+
+@media screen and (max-width: 600px) {
+  .topscreen {
+    margin: 0;
+    background-image: url("https://cdn.oneesports.gg/cdn-data/2022/03/GenshinImpact_YaeMikoWallpaper4.jpg");
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-position: 30% center; /* 55% horizontally and center vertically */
+    background-size: cover;
+    border-radius: 0 0 60px 60px;
+    max-height: 600px;
+  }
+
+  .titlecolumn1 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 0%;
+    margin-left: 0px;
+  }
+
+  /* ==========SEARCH BAR========== */
+  .search-container {
+    display: flex;
+    align-items: center;
+    width: 60%; /* Adjust width as needed */
+    background-color: #ffffff; /* Optional background color */
+    border-radius: 16px; /* Optional rounded corners */
+    overflow: hidden; /* Prevent text overflow */
+    border: 1px solid #ccc; /* Added border style */
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1); /* Added shadow */
+  }
+
+  .search-input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%; /* Adjust width as needed */
+    background-color: transparent; /* Remove default background */
+  }
+
+  .search-button {
+    border: none;
+    outline: none;
+    background-color: transparent; /* Remove default background */
+    cursor: pointer; /* Indicate clickable button */
+  }
+  
+  .title-and-tombol-selengkapnya {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    justify-content: space-between;
+  
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    font-family: Segoe UI, sans-serif;
+    align-items: center;
+    margin-bottom: 0px;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}

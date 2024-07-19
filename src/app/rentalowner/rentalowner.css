@@ -1,0 +1,228 @@
+/* ===============BUAT HEADER============== */
+header {
+  background-color: #33333300;
+  padding: 10px;
+  color: white;
+  background-color: white;
+  border-bottom: 2px solid #252b364b;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 45px;
+}
+
+.center-buttons {
+  display: flex;
+  justify-content: end;
+  flex-grow: 1;
+}
+
+.center-buttons button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #44444400;
+  color: #080a0c9a;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-family: Segoe UI, sans-serif;
+}
+
+/* .center-buttons button:hover {
+    background-color: #555;
+  } */
+
+.right-button {
+  margin-left: auto;
+}
+
+.right-button button {
+  padding: 10px 20px;
+  background-color: #ac25eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-family: Segoe UI, sans-serif;
+  margin-right: 50px;
+}
+
+.right-button button:hover {
+  background-color: #555;
+}
+
+/* ==========SEARCH BAR========== */
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 100%; /* Adjust width as needed */
+  background-color: #ffffff; /* Optional background color */
+  border-radius: 7px; /* Optional rounded corners */
+  overflow: hidden; /* Prevent text overflow */
+  border: 1px solid #dbdfe6; /* Added border style */
+
+  margin-left: 0%;
+  margin-top: 0px;
+}
+
+.search-input1 {
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%; /* Adjust width as needed */
+  background-color: transparent; /* Remove default background */
+}
+
+.search-button {
+  border: none;
+  outline: none;
+  background-color: transparent; /* Remove default background */
+  cursor: pointer; /* Indicate clickable button */
+}
+
+/* ========== toggles ============= */
+
+.toggle-container {
+  display: flex;
+  flex-direction: row;
+
+  gap: 30%;
+  margin-left: 0%;
+  margin-top: 10px;
+}
+
+.toggle-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.toggle-label {
+  margin-left: 10px;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+.toggle-switch {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  display: inline-block;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+/* ============= BUAT LIST RENTALAN ============= */
+
+.Rentalan-Name {
+  font-family: Segoe UI, sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  margin-bottom: 0px;
+  color: #252b36;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.Rentalan-At {
+  font-weight: normal;
+  font-size: 13.6px;
+  margin-top: 3px;
+  margin-left: 10px;
+  margin-bottom: 2px;
+  color: #252b36;
+}
+
+.location-info {
+  font-family: Segoe UI, sans-serif;
+  font-weight: normal;
+
+  font-size: 13.6px;
+  margin-bottom: 0px;
+  color: #252b36;
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-right: 10px;
+}
+
+.jumlah-kostum {
+  font-family: Segoe UI, sans-serif;
+  font-weight: normal;
+
+  font-size: 13.6px;
+  margin-bottom: 0px;
+  color: #f9b115;
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-right: 10px;
+}
+
+.title-and-tombol-selengkapnya {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  justify-content: space-between;
+
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 0%;
+  font-family: Segoe UI, sans-serif;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.main-image {
+  height: 200px;
+  width: 200px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.item-link {
+  transition: transform 0.1s ease;
+}
+.item-link:hover {
+  transform: scale(1.05);
+}

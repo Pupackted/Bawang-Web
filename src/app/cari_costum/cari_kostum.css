@@ -1,0 +1,389 @@
+/* ===============BUAT HEADER============== */
+header {
+  background-color: #33333300;
+  padding: 10px;
+  color: white;
+  background-color: white;
+  border-bottom: 2px solid #252b364b;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 45px;
+}
+
+.center-buttons {
+  display: flex;
+  justify-content: end;
+  flex-grow: 1;
+}
+
+.center-buttons button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #44444400;
+  color: #080a0c9a;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-family: Segoe UI, sans-serif;
+}
+
+/* .center-buttons button:hover {
+  background-color: #555;
+} */
+
+.right-button {
+  margin-left: auto;
+}
+
+.right-button button {
+  padding: 10px 20px;
+  background-color: #ac25eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-family: Segoe UI, sans-serif;
+  margin-right: 50px;
+}
+
+.right-button button:hover {
+  background-color: #555;
+}
+
+/* ========== text biru yg di kiri wkwwkwk =========== */
+
+.text-biru-yg-di-kiri {
+  font-family: Segoe UI, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  color: #3399ff;
+  margin-top: 35px;
+  margin-bottom: 0px;
+}
+/* =============list of games and anime yg di kiri ======== */
+.list-container {
+  width: 200px;
+  margin: 0 auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: "Segoe UI", sans-serif;
+  margin-top: 5%;
+}
+
+.list-item {
+  padding: 10px 15px;
+  border-bottom: 1px solid #e0e0e0;
+  cursor: pointer;
+  text-align: start;
+  text-decoration: none;
+  color: #252b36;
+  display: block;
+}
+
+.list-item:last-child {
+  border-bottom: none;
+}
+
+.list-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* ==========SEARCH BAR========== */
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 7px;
+  overflow: hidden;
+  border: 1px solid #dbdfe6;
+}
+
+.search-input1 {
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%; /* Adjust width as needed */
+  background-color: transparent; /* Remove default background */
+}
+
+.search-button {
+  border: none;
+  outline: none;
+  background-color: transparent; /* Remove default background */
+  cursor: pointer; /* Indicate clickable button */
+}
+/* ==================== DROPDOWN ======================== */
+.search-dropdown-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 2%;
+}
+
+.search-dropdown {
+  position: relative;
+  display: inline-block;
+  width: 200px; /* Adjust width as needed */
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dbdfe6;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #252b36;
+  font-family: Segoe UI, sans-serif;
+}
+
+.dropdown-arrow {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 100%;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 10px;
+  text-decoration: none;
+  font-family: Segoe UI, sans-serif;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f0f0f0;
+}
+
+.search-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* ========== toggles yg di kanan itu ============= */
+
+.toggle-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 2%;
+  
+}
+
+.toggle-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.toggle-label {
+  margin-left: 10px;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+.toggle-switch {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  display: inline-block;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+/* =========== buat list of costumes ============== */
+
+.main-image {
+  height: 200px;
+  width: 200px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.profile-image {
+  width: 34px;
+  height: 34px;
+  border-radius: 680px;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+.profile-name {
+  font-weight: bold;
+  font-size: 13.6px;
+  margin-bottom: 0px;
+  color: #252b36;
+}
+
+.profile-username {
+  font-weight: normal;
+  font-size: 13.6px;
+  margin-top: 0px;
+  color: #252b36;
+}
+
+.item-title {
+  font-family: Segoe UI, sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  margin-bottom: 0px;
+  color: #252b36;
+  margin-left: 10px;
+  margin-top: 0px;
+  margin-right: 10px;
+}
+
+.item-price {
+  font-family: Segoe UI, sans-serif;
+  font-weight: bold;
+  font-size: 13.6px;
+  margin-bottom: 0px;
+  color: #ac25eb;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.item-tag {
+  font-family: Segoe UI, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 13.6px;
+  margin-bottom: 0px;
+  color: #252b36;
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-right: 10px;
+}
+
+.item-tv {
+  font-family: Segoe UI, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 13.6px;
+  margin-bottom: 0px;
+  color: #252b36;
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-right: 10px;
+}
+
+.item-contact {
+  font-family: Segoe UI, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 13.6px;
+  margin-bottom: 0px;
+  color: #252b36;
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-right: 10px;
+}
+
+.item-size {
+  font-family: Segoe UI, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 13px;
+  margin-bottom: 0px;
+  color: #252b36;
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-right: 5px;
+}
+
+.item-gender {
+  font-family: Segoe UI, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 13px;
+  margin-bottom: 0px;
+  color: #252b36;
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-right: 5px;
+}
+
+.item-location {
+  font-family: Segoe UI, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14.6px;
+  margin-bottom: 0px;
+  color: #252b36a4;
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-right: 5px;
+}
+.top-border {
+  position: absolute; /* Make the container absolutely positioned */
+  bottom: 0; /* Position it at the bottom of the parent */
+  left: 0; /* Align it to the left edge (optional, adjust as needed) */
+  right: 0; /* Align it to the right edge (optional, adjust as needed) */
+  border-top: 1px solid #252b363b;
+  max-height: 30%;
+  overflow: hidden;
+  justify-content: flex-end;
+  background-color: #252b3602;
+}
+
+.item-link {
+  transition: transform 0.1s ease;
+}
+.item-link:hover {
+  transform: scale(1.05);
+}

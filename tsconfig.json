@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    // "checkJs": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": true,
+    "incremental": true,
+    "module": "esnext",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx"
+, "src/app/signup/page.jsx", "src/app/signin/page.jsx", "src/app/page.js", "src/app/components/costumeCard.jsx", "src/app/layout.js", "src/app/fetcher.js", "src/app/costumes/[id]/page.tsx", "src/app/profile/[id]/page.jsx", "src/context/AuthContext.js", "src/app/edit-or-add/imagesfield.tsx"  ],
+  "exclude": [
+    "node_modules",
+    ".next"
+  ]
+}

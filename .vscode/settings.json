@@ -1,0 +1,8 @@
+{
+    "typescript.tsdk": "node_modules\\typescript\\lib",
+    "iridium.npm.showSupportIcon": false,
+    "conventionalCommits.scopes": [
+        "auth",
+        "project"
+    ]
+}

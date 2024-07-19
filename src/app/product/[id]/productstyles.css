@@ -1,0 +1,427 @@
+header {
+  background-color: #33333300;
+  padding: 10px;
+  color: white;
+  background-color: white;
+  border-bottom: 2px solid #252b364b;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 45px;
+}
+
+.center-buttons {
+  display: flex;
+  justify-content: end;
+  flex-grow: 1;
+}
+
+.center-buttons button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #44444400;
+  color: #080a0c9a;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-family: Segoe UI, sans-serif;
+}
+
+/* .center-buttons button:hover {
+  background-color: #555;
+} */
+
+.right-button {
+  margin-left: auto;
+}
+
+.right-button button {
+  padding: 10px 20px;
+  background-color: #ac25eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-family: Segoe UI, sans-serif;
+  margin-right: 50px;
+}
+
+.right-button button:hover {
+  background-color: #555;
+}
+
+/* ===========FOR LEFT IMAGE ================= */
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 415px;
+  margin-left: 0px;
+}
+
+.big-image {
+  width: 415px;
+  height: 415px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 1px solid #252b36;
+}
+
+.thumbnail-container {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  max-width: 400px; /* Adjust to the desired width */
+  padding: 10px;
+}
+
+.thumbnail {
+  width: 76px;
+  height: 76px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 1px solid #252b36;
+  flex: 0 0 auto;
+}
+
+.thumbnail:hover {
+  border: 1px solid #ac25eb;
+  transform: scale(1.05);
+}
+
+/* Optional: Custom scrollbar styles */
+.thumbnail-container::-webkit-scrollbar {
+  height: 5px;
+}
+
+.thumbnail-container::-webkit-scrollbar-thumb {
+  background-color: #252b36;
+  border-radius: 10px;
+}
+
+.thumbnail-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* ==========SEARCH BAR========== */
+
+/* ===============BUAT PRDUCT TEXTS============= */
+
+.profile-name {
+  font-weight: bold;
+  font-size: 13.6px;
+  margin-bottom: 0px;
+  color: #252b36;
+}
+
+.profile-username {
+  font-weight: normal;
+  font-size: 13.6px;
+  margin-top: 0px;
+  color: #252b36;
+}
+
+.item-title1 {
+  font-family: Segoe UI, sans-serif;
+  font-weight: normal;
+  font-size: 34px;
+  margin-bottom: 0px;
+  color: #252b36;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 10px;
+}
+
+.item-price1 {
+  font-family: Segoe UI, sans-serif;
+  font-weight: bold;
+  font-size: 21.13px;
+  margin-bottom: 0px;
+  color: #ac25eb;
+  margin-left: 0px;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.item-tag1 {
+  font-family: Segoe UI, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 17px;
+  margin-bottom: 0px;
+  color: #252b36;
+  margin-left: 2%;
+  margin-top: 0px;
+  margin-right: 10px;
+}
+
+.item-tv1 {
+  font-family: Segoe UI, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 17px;
+  margin-bottom: 0px;
+  color: #252b36;
+  margin-left: 2%;
+  margin-top: 0px;
+  margin-right: 10px;
+}
+
+.item-contact1 {
+  font-family: Segoe UI, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 17px;
+  margin-bottom: 0px;
+  color: #252b36;
+  margin-left: 2%;
+  margin-top: 0px;
+  margin-right: 10px;
+}
+
+.item-size1 {
+  font-family: Segoe UI, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 17px;
+  margin-bottom: 0px;
+  color: #252b36;
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-right: 5px;
+}
+
+.item-gender1 {
+  font-family: Segoe UI, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 17px;
+  margin-bottom: 0px;
+  color: #252b36;
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-right: 5px;
+}
+
+.item-location1 {
+  font-family: Segoe UI, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 17px;
+  margin-bottom: 0px;
+  color: #252b36;
+  margin-left: 2%;
+  margin-top: 0px;
+  margin-right: 5px;
+}
+
+
+/* lihat di instagram button */
+.instagram-button {
+  width: 187px;
+  height: 40px;
+  background-color: transparent;
+  border: 2px solid #ac25eb;
+  border-radius: 6.38px;
+  color: #ac25eb;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  line-height: 36px; /* Center the text vertically */
+  cursor: pointer;
+  text-decoration: none; /* Remove underline from link */
+  display: inline-block;
+  margin-top: 7%;
+}
+.instagram-button:hover {
+  background-color: #ac25eb;
+  color: #fff;
+}
+
+/* =========== box yg kanan itu ================ */
+
+.profile-image {
+  width: 34px;
+  height: 34px;
+  border-radius: 680px;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.profile-username {
+  font-weight: normal;
+  font-size: 13.6px;
+  margin-top: 0px;
+  color: #252b36;
+}
+
+.profile-name {
+  font-family: Segoe UI, sans-serif;
+  font-weight: bold;
+  font-size: 13.6px;
+  margin-bottom: 0px;
+  color: #ac25eb;
+  margin-left: 0px;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+/* yellow button ke dm ig */
+
+.top-border1 {
+  margin-top: 25%;
+  border-top: 1px solid #252b363b;
+  max-height: 30%;
+  overflow: hidden;
+  justify-content: flex-end;
+  background-color: #252b3602;
+}
+
+/* ========= bagian yg costuimes template thing ============== */
+
+
+
+  /* ===============BUAT FRESH FROM THE OVERN============= */
+
+.main-image {
+  height: 200px;
+  width: 200px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.profile-image {
+  width: 34px;
+  height: 34px;
+  border-radius: 680px;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+.profile-name {
+  font-weight: bold;
+  font-size: 13.6px;
+  margin-bottom: 0px;
+  color: #252b36;
+}
+
+.profile-username {
+  font-weight: normal;
+  font-size: 13.6px;
+  margin-top: 0px;
+  color: #252b36;
+}
+
+.item-title {
+  font-family: Segoe UI, sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  margin-bottom: 0px;
+  color: #252b36;
+  margin-left: 10px;
+  margin-top: 0px;
+  margin-right: 10px;
+}
+
+.item-price {
+  font-family: Segoe UI, sans-serif;
+  font-weight: bold;
+  font-size: 13.6px;
+  margin-bottom: 0px;
+  color: #ac25eb;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.item-tag {
+  font-family: Segoe UI, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 13.6px;
+  margin-bottom: 0px;
+  color: #252b36;
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-right: 10px;
+}
+
+.item-tv {
+  font-family: Segoe UI, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 13.6px;
+  margin-bottom: 0px;
+  color: #252b36;
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-right: 10px;
+}
+
+.item-contact {
+  font-family: Segoe UI, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 13.6px;
+  margin-bottom: 0px;
+  color: #252b36;
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-right: 10px;
+}
+
+.item-size {
+  font-family: Segoe UI, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 13px;
+  margin-bottom: 0px;
+  color: #252b36;
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-right: 5px;
+}
+
+.item-gender {
+  font-family: Segoe UI, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 13px;
+  margin-bottom: 0px;
+  color: #252b36;
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-right: 5px;
+}
+
+.item-location {
+  font-family: Segoe UI, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14.6px;
+  margin-bottom: 0px;
+  color: #252b36a4;
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-right: 5px;
+}
+.top-border {
+  position: absolute; /* Make the container absolutely positioned */
+  bottom: 0; /* Position it at the bottom of the parent */
+  left: 0; /* Align it to the left edge (optional, adjust as needed) */
+  right: 0; /* Align it to the right edge (optional, adjust as needed) */
+  border-top: 1px solid #252b363b;
+  max-height: 30%;
+  overflow: hidden;
+  justify-content: flex-end;
+  background-color: #252b3602;
+}
+
+.item-link {
+  transition: transform 0.1s ease;
+}
+.item-link:hover {
+  transform: scale(1.05);
+}

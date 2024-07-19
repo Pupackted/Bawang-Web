@@ -1,0 +1,27 @@
+/* scroll.css */
+
+.custom-scrollbar {
+    overflow-x: auto;
+    padding-bottom: 16px; /* Adjust this value to create space for the scrollbar */
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #ac25eb;
+    border-radius: 10px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  /* For Firefox */
+  .custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #ac25eb #f1f1f1;
+  }
+  
